@@ -1,0 +1,3 @@
+Impliment Stack using Modules.
+1.Collections -> deque (Double ended queue)->LIFO order.
+2.
