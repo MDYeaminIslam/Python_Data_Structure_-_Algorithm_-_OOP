@@ -32,5 +32,5 @@ print(queue1)
 queue1.pop() #removing elements form the queue using pop() method
 queue1.pop()
 queue1.pop()
-print(queue1) #at the end of the queue is empty
+print(queue1) #at the end of the queue is empty 
 print(not queue1)

@@ -9,7 +9,7 @@ queue.appendleft(30)
 queue.appendleft(40)
 print(queue)
 
-#removing valuw form the queue using pop method which will remove the value from the right side of the queue.
+#removing value form the queue using pop method which will remove the value from the right side of the queue.
 queue.pop()
 queue.pop()
 print(queue)

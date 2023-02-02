@@ -92,15 +92,54 @@ class LinkedList:
             new_node = Node(data)
             new_node.ref = n.ref
             n.ref = new_node
-                
+    
+    #deleting the first node from the Linked List
+    def delete_begin(self):
+        if self.head is None:
+            print("Linked List is empty and you can't delete any node!")
+        else:
+            self.head = self.head.ref
+    
+    #deleting the last node from the Linked List
+    def delete_end(self):
+        if self.head is None:
+            print("Linked List is empty and you can't delete any node!")
+        #when Linked List contains only one node than delete this way
+        elif self.head.ref is  None:
+            self.head = None
+        #when Linked List contains more than one node than delete this way
+        else:
+            n = self.head
+            while n.ref.ref is not None:
+                n = n.ref
+            n.ref = None
+    #deleting a node by value/deleting selected value from the Linked List that user given
+    def delete_by_value(self,X):
+        if self.head is None:
+            print("Can't delete any node because Linked List is empty!")
+            return #if we don't want else part of this "if" statement than we can give "return"
+        if X==self.head.data:
+            self.head = self.head.ref
+            
+        n = self.head
+        while n.ref is not None:
+            if X==n.ref.data:
+                break
+            n = n.ref
+            
+        if n.ref is None:
+            print("Node is not present in the Linked List")
+        else:
+            n.ref = n.ref.ref
+            
             
 LL1 = LinkedList()
-"""
-LL1.add_begin(299)
-LL1.add_end(4000)
-LL1.add_after(5678,299) #inserting 5678 after 299 in the Linked List
-LL1.add_before(443,4000)
-"""
-LL1.insert_empty(200)
-
+LL1.add_begin(20)
+LL1.add_begin(40)
+LL1.add_begin(60)
+LL1.add_begin(80)
+LL1.add_begin(90)
+#LL1.delete_begin() #deleting the first node from the Linked List
+#LL1.delete_end() #deleting the last node from the Linked List
+LL1.delete_by_value(60)
 LL1.print_LL()
