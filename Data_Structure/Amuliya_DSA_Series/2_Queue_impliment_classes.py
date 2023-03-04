@@ -1,9 +1,9 @@
-#impliment queue using dequeue module which is double ended queue.
+#implement queue using dequeue module which is double ended queue.
 
 import collections
 queue =collections.deque()
 
-#here we will add value using appanedleft method which will add value at the left side of the queue.
+#here we will add value using appendleft method which will add value at the left side of the queue.
 queue.appendleft(20)
 queue.appendleft(30)
 queue.appendleft(40)

@@ -6,12 +6,12 @@
 #priority queue 
 
 
-#here we set lowest value highest priority.
+#here we set lowest value highest priority. and according to this we will remove the lowest value first.
 #priority queue 
 import queue
 Queue = queue.PriorityQueue() #this method give lowest value highest priority.
 #for entering value in the Queue we use put method and for removing value from the Queue we use get method.
-Queue.put(10)
+#Queue.put(10)
 Queue.put(60)
 Queue.put(20)
 Queue.put(40)
@@ -20,13 +20,13 @@ print(Queue.get())
 print(Queue.get())
 print(Queue.get())
 print(Queue.get())
-print(Queue.get())
+#print(Queue.get())
 
 
 #if we want to give item with their priority then we use tuple.
 
 """
-    q = []
+q = []
 q.append((9, 80))
 q.append((7, 34))
 q.append((2, 10))

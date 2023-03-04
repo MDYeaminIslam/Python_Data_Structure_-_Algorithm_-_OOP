@@ -173,7 +173,7 @@ ddl.add_before(10,4)
 ddl.add_end(20)
 #ddl.delete_begin()
 #ddl.delete_end()
-ddl.delete_by_value(4)
+#ddl.delete_by_value(4)
 ddl.print_LL_forward()
 
 #ddl.print_LL_reverse()
